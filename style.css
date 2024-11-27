@@ -98,3 +98,73 @@ img {
 .aboutTitle, p>.lorem {
     margin: 4px;
 }
+
+.main {
+    margin: 0 0 0 20px;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 97vw;
+    overflow-x: hidden;
+}
+
+.mainTitle {
+    padding-left: 15px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    gap: 20px;
+    padding: 15px;
+}
+
+.project {
+    height: 375px;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.projectImg {
+    width: 100%;
+    height: 200px;
+}
+
+
+@media (max-width: 920px) {
+    .projects {
+        grid-template-columns: repeat(2, minmax(30%, 1fr));
+    }
+
+    .project {
+        height: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .projects {
+        grid-template-columns: repeat(1, minmax(30%, 1fr));
+    }
+
+    .project {
+        height: 450px;
+    }
+}
+
+.projectInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 8px;
+}
+
+.projectIcons {
+    cursor: pointer;
+}
+
+.projectDesc {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 8px;
+}
