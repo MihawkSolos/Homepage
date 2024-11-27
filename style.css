@@ -27,7 +27,7 @@ body{
     left: 0;
     width: 200%; /* Ensures it stretches wide enough */
     height: 400px; /* Make it larger to account for rotation */
-    background-color: #0099cc;
+    background-color: rgb(0, 153, 204);
     transform: rotate(-5deg);
     transform-origin: bottom left;
     z-index: -1;
@@ -39,8 +39,7 @@ body{
 }
 
 .footer {
-    background: rgb(62, 134, 241);
-    width: 100vw;
+    background: rgb(0, 153, 204);
 }
 
 img {
@@ -98,6 +97,16 @@ img {
 .aboutTitle, p>.lorem {
     margin: 4px;
 }
+
+@media (max-width: 920px) {
+    
+}
+
+@media (max-width: 420px) {
+    
+}
+
+
 
 .main {
     margin: 0 0 0 20px;
@@ -167,4 +176,40 @@ img {
     flex-wrap: wrap;
     margin: 0;
     padding: 0 8px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px;
+    gap: 15px;
+    color: #fff;
+}
+
+@media (max-width: 420px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+.phone, .email {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 6px;
+}
+
+.contactIcons {
+    margin-top: 6px;
+    gap: 6px;
+}
+
+.footerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    width: 300px;
+    padding: 15px;
 }
