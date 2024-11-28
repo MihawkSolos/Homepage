@@ -99,11 +99,72 @@ img {
 }
 
 @media (max-width: 920px) {
-    
+    .header {
+        display: flex;
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center the content horizontally */
+        text-align: center; /* Align text inside header */
+        margin-bottom: 20px; /* Provide space below header */
+        gap: 15px; /* Add consistent spacing between children */
+        height: 400px;
+    }
+
+    .header::before {
+        height: 550px;
+    }
+
+    .photo {
+        position: relative;
+        transform: translate(-220px, 130px); /* Ensure no unnecessary offset */
+        margin-bottom: 20px; /* Space below photo */
+        width: 100%; /* Make the photo responsive */
+        max-width: 400px; /* Limit maximum size */
+        border-radius: 10px; /* Optional: Add rounded corners for aesthetic */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        z-index: 1;
+    }
+
+    .name {
+        transform: translate(15px, -70px);
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .aboutTitle {
+        margin: 0;
+    }
+
+    .aboutSection {
+        width: 30rem;
+        transform: translate(30px, -90px);
+        /* transform: translateY(-90px); */
+    }
+
+    .aboutSection > .lorem {
+        margin-top: 6px;
+        padding-left: 120px;
+        padding-right: 8px;
+        text-align: center;
+    }
+
+    .lorem > span {
+        padding: 0;
+        text-align: left;
+    }
+
+    .aboutIcons {
+        margin: 0;
+        padding: 0;
+    }
 }
 
+
+
 @media (max-width: 420px) {
-    
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
