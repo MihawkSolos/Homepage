@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     color: #000;
-    font: var(--myFont1)
+    font: var(--myFont1);
 }
 
 .header {
@@ -189,6 +189,7 @@ img {
     grid-template-columns: repeat(3, minmax(30%, 1fr));
     gap: 20px;
     padding: 15px;
+    font-style: var(--myFont2);
 }
 
 .project {
