@@ -70,7 +70,7 @@ img {
 
 .name {
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     margin: 0;
     padding: 2px;
     position: absolute;
@@ -117,7 +117,7 @@ img {
         position: relative;
         transform: translate(-220px, 130px); /* Ensure no unnecessary offset */
         margin-bottom: 20px; /* Space below photo */
-        width: 100%; /* Make the photo responsive */
+        width: 85%; /* Make the photo responsive */
         max-width: 400px; /* Limit maximum size */
         border-radius: 10px; /* Optional: Add rounded corners for aesthetic */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
